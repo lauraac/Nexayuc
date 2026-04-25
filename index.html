@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexaYuc | Compras por encargo en Yucatán</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <main class="app">
+    <section class="hero">
+      <nav class="navbar">
+        <div class="brand">
+          <div class="brand-icon">N</div>
+          <div>
+            <h1>NexaYuc</h1>
+            <p>Compras por encargo</p>
+          </div>
+        </div>
+
+        <a class="nav-whatsapp" href="#pedido">Pedir ahora</a>
+      </nav>
+
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="pill">Disponible en Yucatán</span>
+
+          <h2>
+            Dinos qué necesitas y
+            <span>nosotros te ayudamos a conseguirlo.</span>
+          </h2>
+
+          <p>
+            Cotizamos productos por ti, buscamos opciones y te enviamos el precio final por WhatsApp.
+            Sin vueltas, sin complicarte y sin comprar hasta que confirmes.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#pedido" class="btn btn-primary">Solicitar cotización</a>
+            <a href="#como-funciona" class="btn btn-outline">Ver cómo funciona</a>
+          </div>
+
+          <div class="trust-row">
+            <div>🔎 Buscamos por ti</div>
+            <div>💬 Atención por WhatsApp</div>
+            <div>🔒 Pago antes de compra</div>
+          </div>
+        </div>
+
+        <section class="order-card" id="pedido">
+          <div class="card-header">
+            <h3>Solicita tu cotización</h3>
+            <p>Completa el formulario y se abrirá WhatsApp con tu pedido.</p>
+          </div>
+
+          <form id="orderForm">
+            <div class="field">
+              <label for="name">Nombre</label>
+              <input id="name" type="text" placeholder="Ej. Laura Alfonso" required />
+            </div>
+
+            <div class="field">
+              <label for="phone">Teléfono</label>
+              <input id="phone" type="tel" placeholder="Ej. 9991234567" required />
+            </div>
+
+            <div class="field">
+              <label for="city">Ciudad o municipio</label>
+              <select id="city" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Mérida">Mérida</option>
+                <option value="Kanasín">Kanasín</option>
+                <option value="Umán">Umán</option>
+                <option value="Progreso">Progreso</option>
+                <option value="Valladolid">Valladolid</option>
+                <option value="Tizimín">Tizimín</option>
+                <option value="Otro municipio de Yucatán">Otro municipio de Yucatán</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="product">¿Qué quieres comprar?</label>
+              <textarea id="product" placeholder="Ej. Audífonos buenos, económicos y con buena batería"
+                required></textarea>
+            </div>
+            <div class="field">
+              <label for="image">Sube una imagen del producto si la tienes</label>
+              <input id="image" type="file" accept="image/*" />
+              <p class="field-help">Puedes subir una foto si no sabes el nombre exacto.</p>
+              <img id="preview" class="preview-img" alt="Vista previa del producto" />
+            </div>
+            <div class="field">
+              <label for="link">Link del producto, si ya lo tienes</label>
+              <input id="link" type="url" placeholder="https://..." />
+            </div>
+
+            <div class="notice">
+              No compramos ningún producto hasta confirmar precio final, disponibilidad y pago.
+            </div>
+
+            <button class="submit-btn" type="submit">
+              Enviar pedido por WhatsApp
+            </button>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <section class="section" id="como-funciona">
+      <div class="section-title">
+        <span>Proceso simple</span>
+        <h2>¿Cómo funciona NexaYuc?</h2>
+      </div>
+
+      <div class="steps">
+        <article class="step-card">
+          <div class="step-number">01</div>
+          <h3>Nos dices qué buscas</h3>
+          <p>Puede ser un producto específico, una idea o un link que ya encontraste.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-number">02</div>
+          <h3>Te cotizamos</h3>
+          <p>Buscamos opciones y te compartimos precio final, tiempo estimado y detalles.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-number">03</div>
+          <h3>Confirmas y compramos</h3>
+          <p>Después de confirmar tu pago, realizamos la compra por encargo.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>NexaYuc © 2026 · Compras por encargo en Yucatán</p>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
